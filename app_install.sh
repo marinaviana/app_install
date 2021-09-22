@@ -10,9 +10,13 @@ while read -r p ; do sudo apt-get install -y $p ; done < <(cat << "EOF"
     git
     curl
     wget
+    openjdk-8-jdk
+    nodejs
 EOF
 )
 
 sudo snap install --classic code
+sudo snap install slack --classic
+sudo snap install postman
 
 echo "FIM"
